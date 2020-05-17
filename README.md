@@ -74,7 +74,7 @@ part1模块一作业
       4.深拷贝相当于是生成一个新的对象，只是对象内部的属性值与原对象一模一样，当改变一个对象的值不会影响另一个对象，
       因为两个对象引用不一样，对应的真实数据在堆中也是两个互不影响的数据
 
-## 8.
+## 8.你是如何理解javascript的异步编程，eventLoop是做什么的，微任务与宏任务
 
 ### 解析：
     1.javascript的异步编程：
@@ -86,16 +86,16 @@ part1模块一作业
     3.宏任务与微任务：
       微任务：当前主线程执行完之后立即执行的代码，下一个主线程之前 （promise 等）
       宏任务：回调队列中的任务可以称为宏任务，当前队列主线程任务执行完之后才执行的任务（setTimeOut等）
-## 9.
+## 9.使用Promise重构
     setTimeout(function () {
-				  var a = 'hello';
-				  setTimeout(function () {
-				  	var b = 'lagou';
-				  	setTimeout(function () {
-				  		var c = 'I ♥ U';
-				  		console.log(a + b +c )			  
-				  	})			  
-				  })
+      var a = 'hello';
+      setTimeout(function () {
+        var b = 'lagou';
+        setTimeout(function () {
+          var c = 'I ♥ U';
+          console.log(a + b +c )			  
+        })			  
+      })
 		})
 ### 解析：
     new Promise((resolve, reject) => {
@@ -111,7 +111,7 @@ part1模块一作业
 ### 解析：
     TypeScript是Javascript的超集，实现以面向对象编程的方式使用Javascript。但是代码最后还是需要编译为javascript。
 
-## 11. 请简述Typescript优势
+## 11. 请简述Typescript优缺点
 
 ### 解析：
     优点： 1.静态类型检测避免开发中出现的类型异常，开发更高效；
