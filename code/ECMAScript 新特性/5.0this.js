@@ -6,13 +6,14 @@
 
 
 //在node环境下模块中this指向当前模块 某种情况下this === exports === module.exports
-//exports.a = module.exports.a
+//exports.a = module.exports.a = this.a
 //this {}
-//this === module.exports true
+//this === module.exports true 当不给module.exports赋值的情况下
 exports.a = 10;
 this.b = 20;
 module.exports.c = 30
-//此时导出的数据为{ a: 10, b: 20, c: 30 }
+
+//此时导出的数据为{ a: 10, b: 20, c: 30 } 此时this === exports === module.exports
 module.exports = {
   d:50
 }
