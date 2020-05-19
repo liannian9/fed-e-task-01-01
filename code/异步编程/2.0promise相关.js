@@ -23,7 +23,7 @@ new Promise((resolve, reject) => {
   //异步微任务
   console.log(err)
 })
-
+//链式调用
 new Promise((resolve, reject) => {
   //同步代码
   resolve(100) //修改状态为fulfiled成功
@@ -65,6 +65,7 @@ ajax('./test.json').then(res=> {
   console.log(res) // 23
 })
 
+//静态方法all
 Promise.all([ajax('./test.json'), ajax('./test.json')]).then(arr => {
   console.log(arr)//[{name: "John"},{name: "John"}]
 })
@@ -73,6 +74,7 @@ Promise.all([ajax('./test.json'), ajax('./tests.json')]).then(arr => {
 }).catch(err => {//只要有任何一个请求失败i就会报错
   console.log(err)//Error: Not Found at XMLHttpRequest.xhr.onload (2.0异步相关.js:28)
 })
+
 
 Promise.resolve(2).then(res => console.log(res)) //2
 Promise.reject(2).catch(res => console.log(res)) //2
@@ -86,6 +88,8 @@ Promise.reject(new Error(2)).catch(res => console.log(res))
     at bootstrap:83
 2.0异步相关.js:37 123 */
 
+
+//race
 let timeout = new Promise((resolve, reject) => {
   setTimeout(() => {
     reject(new Error('timeout'))
