@@ -126,3 +126,4 @@ part1模块一作业
     缺点: 1.新增了许多新特性如接口，泛型等，需要一定的学习成本；
           2.不适于多人开发；
           3.需要编写类型声明，会增加一定的成本
+    ![app_share](https://zl-pub.oss-cn-hangzhou.aliyuncs.com/data/lottery/app_share.jpg)
