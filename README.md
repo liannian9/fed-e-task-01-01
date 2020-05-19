@@ -126,4 +126,4 @@ part1模块一作业
     缺点: 1.新增了许多新特性如接口，泛型等，需要一定的学习成本；
           2.不适于多人开发；
           3.需要编写类型声明，会增加一定的成本
-    ![逐浪软件高新技术企业证书](https://www.z01.com/UploadFiles/Anony/content/md/HyjMvO5XZP..jpg#pic_right)
+    ![逐浪软件高新技术企业证书](./activity.png)
